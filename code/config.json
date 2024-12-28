@@ -3,7 +3,9 @@
   "send": {
     "parameters": {
       "log_file_name": "Example_UDPTimingInterarrivalChannelSender.log",
-      "limit": 100
+      "limit": 100,
+      "dest_mac": "02:42:ab:12:00:03",
+      "source_mac": "02:42:ab:12:00:02"
     }
   },
   "receive": {
