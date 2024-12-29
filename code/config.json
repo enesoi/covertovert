@@ -1,5 +1,5 @@
 {
-  "covert_channel_code": "CSC-PSV-DNS-TCF",
+  "covert_channel_code": "CSC-PSV-LLC-CTRL",
   "send": {
     "parameters": {
       "log_file_name": "Example_UDPTimingInterarrivalChannelSender.log",
