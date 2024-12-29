@@ -15,3 +15,7 @@ Pick a limit value that acts as a separator among 256 values. If the bit value w
 # Example
 
 We want to send a binary message "0". First package should send the value 0 indirectly. According to our algorithm, to encode 0, the CTRL field must be one among (limit, 255]. Assume limit = 100. So the CTRL value can be anything between 100 and 255. This selection is randomized to achieve secrecy. Once we send it, receive() does the reverse and gets bit 0.
+
+# Limitations and Performance
+
+To achieve total accuracy between sent and received message, packets must be received in the order they are sent, and the time between packets must be small enough, but not too much. In our testings, we found the ideal inter-packet time to be 50ms. This, in turn, results in covert channel capacity of 6.4 bits/sec.
